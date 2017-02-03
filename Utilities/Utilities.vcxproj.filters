@@ -1,0 +1,246 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="Src\aeVector2.cpp">
+      <Filter>Source Files\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\aeVector2Int.cpp">
+      <Filter>Source Files\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\aeVector3.cpp">
+      <Filter>Source Files\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\aeVector4.cpp">
+      <Filter>Source Files\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\aeWin32Math.cpp">
+      <Filter>Source Files\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\aeMath.cpp">
+      <Filter>Source Files\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\aeMatrix3.cpp">
+      <Filter>Source Files\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\aeMatrix4.cpp">
+      <Filter>Source Files\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\aeSphere.cpp">
+      <Filter>Source Files\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\aeRay.cpp">
+      <Filter>Source Files\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\aePlane.cpp">
+      <Filter>Source Files\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\aeQuaternion.cpp">
+      <Filter>Source Files\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\aeLogger.cpp">
+      <Filter>Source Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\aePlatformMath.cpp">
+      <Filter>Source Files\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\aePerlin.cpp">
+      <Filter>Source Files\RNG</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\aeZiggurat.cpp">
+      <Filter>Source Files\RNG</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\aeRandomNumberGenerator.cpp">
+      <Filter>Source Files\RNG</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\aeAABB.cpp">
+      <Filter>Source Files\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\aeMemoryAllocator.cpp">
+      <Filter>Source Files\Allocators</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\aeGlobalFrameAlloc.cpp">
+      <Filter>Source Files\Allocators</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\aePlatformTime.cpp">
+      <Filter>Source Files\Time</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\aeString.cpp">
+      <Filter>Source Files\String</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\aeColor.cpp">
+      <Filter>Source Files\Color</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\aeCriticalSection.cpp">
+      <Filter>Source Files\MultiCore</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\aeWin32Time.cpp">
+      <Filter>Source Files\Time</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\aeFileSystem.cpp">
+      <Filter>Source Files\File</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Includes\aeAABB.h">
+      <Filter>Header Files\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Includes\aeMath.h">
+      <Filter>Header Files\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Includes\aeMatrix4.h">
+      <Filter>Header Files\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Includes\aeMatrix3.h">
+      <Filter>Header Files\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Includes\aePlane.h">
+      <Filter>Header Files\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Includes\aeQuaternion.h">
+      <Filter>Header Files\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Includes\aeRay.h">
+      <Filter>Header Files\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Includes\aeSphere.h">
+      <Filter>Header Files\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Includes\aeVector2.h">
+      <Filter>Header Files\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Includes\aeVector3.h">
+      <Filter>Header Files\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Includes\aeVector2Int.h">
+      <Filter>Header Files\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Includes\aeVector4.h">
+      <Filter>Header Files\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Includes\aeWin32Math.h">
+      <Filter>Header Files\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Includes\aeLogger.h">
+      <Filter>Header Files\Debug</Filter>
+    </ClInclude>
+    <ClInclude Include="Includes\aeException.h">
+      <Filter>Header Files\Debug</Filter>
+    </ClInclude>
+    <ClInclude Include="Includes\aePlatformTypes.h">
+      <Filter>Header Files\Prerequisites</Filter>
+    </ClInclude>
+    <ClInclude Include="Includes\aePlatformMath.h">
+      <Filter>Header Files\Prerequisites</Filter>
+    </ClInclude>
+    <ClInclude Include="Includes\aePrerequisitesUtil.h">
+      <Filter>Header Files\Prerequisites</Filter>
+    </ClInclude>
+    <ClInclude Include="Includes\aePlatformDefines.h">
+      <Filter>Header Files\Prerequisites</Filter>
+    </ClInclude>
+    <ClInclude Include="Includes\aeStdHeaders.h">
+      <Filter>Header Files\Prerequisites</Filter>
+    </ClInclude>
+    <ClInclude Include="Includes\aeModule.h">
+      <Filter>Header Files\Prerequisites</Filter>
+    </ClInclude>
+    <ClInclude Include="Includes\aeFileSystem.h">
+      <Filter>Header Files\File</Filter>
+    </ClInclude>
+    <ClInclude Include="Includes\aeGlobalFrameAlloc.h">
+      <Filter>Header Files\Allocators</Filter>
+    </ClInclude>
+    <ClInclude Include="Includes\aeMemoryAllocator.h">
+      <Filter>Header Files\Allocators</Filter>
+    </ClInclude>
+    <ClInclude Include="Includes\aeString.h">
+      <Filter>Header Files\String</Filter>
+    </ClInclude>
+    <ClInclude Include="Includes\aeRandomNumberGenerator.h">
+      <Filter>Header Files\RNG</Filter>
+    </ClInclude>
+    <ClInclude Include="Includes\aePerlin.h">
+      <Filter>Header Files\RNG</Filter>
+    </ClInclude>
+    <ClInclude Include="Includes\aeZiggurat.h">
+      <Filter>Header Files\RNG</Filter>
+    </ClInclude>
+    <ClInclude Include="Includes\aeTime.h">
+      <Filter>Header Files\Time</Filter>
+    </ClInclude>
+    <ClInclude Include="Includes\aeColor.h">
+      <Filter>Header Files\Color</Filter>
+    </ClInclude>
+    <ClInclude Include="Includes\aeCriticalSection.h">
+      <Filter>Header Files\Multicore</Filter>
+    </ClInclude>
+    <ClInclude Include="Includes\aeXMLSystem.h">
+      <Filter>Header Files\File</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{77c3d898-22c3-41eb-86a3-6b2d5bfe20d2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{18d2906c-fb61-407a-96b5-35dd75ebece2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Math">
+      <UniqueIdentifier>{cdcef21c-5586-4eb6-a884-2b586f4f3b75}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Debug">
+      <UniqueIdentifier>{69cef60e-5e13-4cd5-ba5e-93cd5d863f8e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\File">
+      <UniqueIdentifier>{07836957-d555-4ead-b00c-d2384f7c2b26}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Prerequisites">
+      <UniqueIdentifier>{ae17b253-ec86-400f-97ae-1ab66697e0bf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Allocators">
+      <UniqueIdentifier>{28d21b49-b4d0-4e76-8163-6cec246a7e40}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\String">
+      <UniqueIdentifier>{bf2f32d8-395d-4f2f-968d-c9fc0a7e6103}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\RNG">
+      <UniqueIdentifier>{857313b3-75ff-4b8d-b8c0-d2c05a2aacd9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Time">
+      <UniqueIdentifier>{3327bc6e-00de-413f-b492-c59d6cc6be24}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Math">
+      <UniqueIdentifier>{6e097054-47a5-477a-9d78-ea9616e8446f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Debug">
+      <UniqueIdentifier>{4f202562-dd31-4e9e-9c0b-a9a49c75206d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\File">
+      <UniqueIdentifier>{81be5bdc-5113-4f46-b2fb-386edfd692cd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\RNG">
+      <UniqueIdentifier>{b8fe090d-2ebd-4110-b766-664876a4e2f8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Time">
+      <UniqueIdentifier>{d0714814-f38a-40fd-8569-ec54ffc4e47a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Allocators">
+      <UniqueIdentifier>{70e32daa-4878-46a8-ab98-4a4861ae9edb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\String">
+      <UniqueIdentifier>{ca21ec93-99b1-481a-8eb9-c50f9e3e26c7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Color">
+      <UniqueIdentifier>{d8c7c116-6eb0-46fa-af90-cc8567a7b7c9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Color">
+      <UniqueIdentifier>{99e073ca-d72f-475e-93f5-16e04dec2740}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Multicore">
+      <UniqueIdentifier>{3de8424d-93d4-414e-b151-a964d7a96bc5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\MultiCore">
+      <UniqueIdentifier>{e076dc2c-fc8e-450d-8692-575fe66c1e2e}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

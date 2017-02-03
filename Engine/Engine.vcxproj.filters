@@ -1,0 +1,159 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Header Files\Prerequisites">
+      <UniqueIdentifier>{0180c51d-69b1-41f9-abba-76270c43634f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Resources">
+      <UniqueIdentifier>{58d87b81-221e-472d-a9d4-75e4447507f2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Resources">
+      <UniqueIdentifier>{62ed96f8-3e81-4753-9773-736b2559c356}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\App">
+      <UniqueIdentifier>{4154ec7e-be9b-4d50-8b14-de98b0d1fa38}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\App">
+      <UniqueIdentifier>{b1a9cca3-4648-4b2d-afd6-01e392a50591}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Vertex navigators">
+      <UniqueIdentifier>{5baf74d9-89fa-4818-950d-5bdfbe3f4e05}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Vertex navigators">
+      <UniqueIdentifier>{e47f2350-d547-48bd-b8a4-ef535ecd6f0c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Game Objects">
+      <UniqueIdentifier>{5d187929-3c3d-4890-9644-0045f4ecbd1e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Game Objects">
+      <UniqueIdentifier>{f9c19666-9596-4ba5-be47-9ff7c7c9ba1a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\GameObject components">
+      <UniqueIdentifier>{3d25e488-44f2-4b8d-9357-25310526e133}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\GameObject components\AddOns">
+      <UniqueIdentifier>{ad98898d-2675-4b7c-8343-31f2bafe4285}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\GameObject components">
+      <UniqueIdentifier>{84e80409-31f0-4057-b91d-31f366ecc06f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\GameObject components\AddOns">
+      <UniqueIdentifier>{a1d27d05-a02c-4d07-a46c-e4a1880258b7}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Includes\aeEngineDefines.h">
+      <Filter>Header Files\Prerequisites</Filter>
+    </ClInclude>
+    <ClInclude Include="Includes\aePrerequisitesEngine.h">
+      <Filter>Header Files\Prerequisites</Filter>
+    </ClInclude>
+    <ClInclude Include="Includes\aeModel.h">
+      <Filter>Header Files\Resources</Filter>
+    </ClInclude>
+    <ClInclude Include="Includes\WinApplication.h">
+      <Filter>Header Files\App</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Includes\aeOctris.h">
+      <Filter>Header Files\Vertex navigators</Filter>
+    </ClInclude>
+    <ClInclude Include="Includes\aeScene.h">
+      <Filter>Header Files\Resources</Filter>
+    </ClInclude>
+    <ClInclude Include="Includes\aeResourceManager.h">
+      <Filter>Header Files\Resources</Filter>
+    </ClInclude>
+    <ClInclude Include="Includes\aeTexture2DResource.h">
+      <Filter>Header Files\Resources</Filter>
+    </ClInclude>
+    <ClInclude Include="Includes\aeGameObject.h">
+      <Filter>Header Files\Game Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="Includes\aeTransform.h">
+      <Filter>Header Files\GameObject components</Filter>
+    </ClInclude>
+    <ClInclude Include="Includes\aeEngineResource.h">
+      <Filter>Header Files\Resources</Filter>
+    </ClInclude>
+    <ClInclude Include="Includes\aeMaterial.h">
+      <Filter>Header Files\Resources</Filter>
+    </ClInclude>
+    <ClInclude Include="Includes\aeGOAddOn.h">
+      <Filter>Header Files\GameObject components\AddOns</Filter>
+    </ClInclude>
+    <ClInclude Include="Includes\aeGOFactory.h">
+      <Filter>Header Files\Game Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="Includes\aeRendererAddOn.h">
+      <Filter>Header Files\GameObject components\AddOns</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Src\aeModel.cpp">
+      <Filter>Source Files\Resources</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\WinApplication.cpp">
+      <Filter>Source Files\App</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\aeOctris.cpp">
+      <Filter>Source Files\Vertex navigators</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\aeScene.cpp">
+      <Filter>Source Files\Resources</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\aeResourceManager.cpp">
+      <Filter>Source Files\Resources</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\aeTexture2DResource.cpp">
+      <Filter>Source Files\Resources</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\aeGameObject.cpp">
+      <Filter>Source Files\Game Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\aeMaterial.cpp">
+      <Filter>Source Files\Resources</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\aeTransform.cpp">
+      <Filter>Source Files\GameObject components</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\aeGOFactory.cpp">
+      <Filter>Source Files\Game Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\aeGOAddOn.cpp">
+      <Filter>Source Files\GameObject components\AddOns</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\aeRendererAddOn.cpp">
+      <Filter>Source Files\GameObject components\AddOns</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <FxCompile Include="..\Bin\Shaders\Default.hlsl">
+      <Filter>Resource Files</Filter>
+    </FxCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Engine.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="icon1.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+  </ItemGroup>
+</Project>

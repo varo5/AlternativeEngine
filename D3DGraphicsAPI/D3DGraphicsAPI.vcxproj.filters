@@ -1,0 +1,135 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Header Files\Prerequisites">
+      <UniqueIdentifier>{d1b17251-fa41-4ffc-842e-8fe6fdad7d4a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Graphics">
+      <UniqueIdentifier>{625465ee-8092-4fe5-8fc2-2c69b3df0a4c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Graphics">
+      <UniqueIdentifier>{8398d42d-1391-4b9f-9010-beda85501198}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Graphics\Resources">
+      <UniqueIdentifier>{02728035-feff-4de5-b274-a25536f268f2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Graphics\Resources\Shaders">
+      <UniqueIdentifier>{d2dec25b-7723-45cf-85a3-023dffd072c5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Graphics\Resources\Buffers">
+      <UniqueIdentifier>{4bd20fdb-3543-4d54-98f3-8009e3ff2488}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Graphics\Camera">
+      <UniqueIdentifier>{ceb814c9-4cef-4de5-a827-0b96147f82f0}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Includes\aePrerequisitesGraphics.h">
+      <Filter>Header Files\Prerequisites</Filter>
+    </ClInclude>
+    <ClInclude Include="Includes\aeGraphicsDefines.h">
+      <Filter>Header Files\Prerequisites</Filter>
+    </ClInclude>
+    <ClInclude Include="Includes\aeDx11Headers.h">
+      <Filter>Header Files\Prerequisites</Filter>
+    </ClInclude>
+    <ClInclude Include="Includes\aeGraphicsAPI.h">
+      <Filter>Header Files\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="Includes\aeGraphicsTypes.h">
+      <Filter>Header Files\Prerequisites</Filter>
+    </ClInclude>
+    <ClInclude Include="Includes\aeRenderer.h">
+      <Filter>Header Files\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="Includes\aeVertexShader.h">
+      <Filter>Header Files\Graphics\Resources\Shaders</Filter>
+    </ClInclude>
+    <ClInclude Include="Includes\aePixelShader.h">
+      <Filter>Header Files\Graphics\Resources\Shaders</Filter>
+    </ClInclude>
+    <ClInclude Include="Includes\aeBuffer.h">
+      <Filter>Header Files\Graphics\Resources\Buffers</Filter>
+    </ClInclude>
+    <ClInclude Include="Includes\aeConstantBuffer.h">
+      <Filter>Header Files\Graphics\Resources\Buffers</Filter>
+    </ClInclude>
+    <ClInclude Include="Includes\aeIndexBuffer.h">
+      <Filter>Header Files\Graphics\Resources\Buffers</Filter>
+    </ClInclude>
+    <ClInclude Include="Includes\aeVertexBuffer.h">
+      <Filter>Header Files\Graphics\Resources\Buffers</Filter>
+    </ClInclude>
+    <ClInclude Include="Includes\aeShader.h">
+      <Filter>Header Files\Graphics\Resources\Shaders</Filter>
+    </ClInclude>
+    <ClInclude Include="Includes\aeGraphicsResource.h">
+      <Filter>Header Files\Graphics\Resources</Filter>
+    </ClInclude>
+    <ClInclude Include="Includes\aeInputLayout.h">
+      <Filter>Header Files\Graphics\Resources</Filter>
+    </ClInclude>
+    <ClInclude Include="Includes\aeTexture2D.h">
+      <Filter>Header Files\Graphics\Resources</Filter>
+    </ClInclude>
+    <ClInclude Include="Includes\aeCamera.h">
+      <Filter>Header Files\Graphics\Camera</Filter>
+    </ClInclude>
+    <ClInclude Include="Includes\aeFrustum.h">
+      <Filter>Header Files\Graphics\Camera</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Src\aeShader.cpp">
+      <Filter>Source Files\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\aeGraphicsAPI.cpp">
+      <Filter>Source Files\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\aeTexture2D.cpp">
+      <Filter>Source Files\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\aeBuffer.cpp">
+      <Filter>Source Files\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\aeVertexBuffer.cpp">
+      <Filter>Source Files\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\aeIndexBuffer.cpp">
+      <Filter>Source Files\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\aeConstantBuffer.cpp">
+      <Filter>Source Files\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\aePixelShader.cpp">
+      <Filter>Source Files\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\aeVertexShader.cpp">
+      <Filter>Source Files\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\aeInputLayout.cpp">
+      <Filter>Source Files\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\aeRenderer.cpp">
+      <Filter>Source Files\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\aeCamera.cpp">
+      <Filter>Source Files\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\aeFrustum.cpp">
+      <Filter>Source Files\Graphics</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

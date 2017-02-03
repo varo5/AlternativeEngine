@@ -1,0 +1,276 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{2640D787-66C0-42DA-A52B-A606762A91F4}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>Utilities</RootNamespace>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>NotSet</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>NotSet</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>NotSet</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>NotSet</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>$(SolutionDir)Bin\$(PlatformTarget)d\</OutDir>
+    <IntDir>$(SolutionDir)Intermediate\$(ProjectName)\$(Configuration)\$(PlatformTarget)\</IntDir>
+    <IncludePath>$(TINYXML2_DIR);$(IncludePath)</IncludePath>
+    <TargetName>$(ProjectName)d</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>$(SolutionDir)Bin\$(PlatformTarget)d\</OutDir>
+    <IntDir>$(SolutionDir)Intermediate\$(ProjectName)\$(Configuration)\$(PlatformTarget)\</IntDir>
+    <IncludePath>$(TINYXML2_DIR);$(IncludePath)</IncludePath>
+    <TargetName>$(ProjectName)d</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(SolutionDir)Bin\$(PlatformTarget)\</OutDir>
+    <IntDir>$(SolutionDir)Intermediate\$(ProjectName)\$(Configuration)\$(PlatformTarget)\</IntDir>
+    <IncludePath>$(TINYXML2_DIR);$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(SolutionDir)Bin\$(PlatformTarget)\</OutDir>
+    <IntDir>$(SolutionDir)Intermediate\$(ProjectName)\$(Configuration)\$(PlatformTarget)\</IntDir>
+    <IncludePath>$(TINYXML2_DIR);$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>AE_UTILITY_EXPORTS;WIN32;_DEBUG;_WINDOWS;_USRDLL;UTILITIES_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(ProjectDir)Includes\</AdditionalIncludeDirectories>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <ForcedIncludeFiles>$(ProjectDir)Includes\aePrerequisitesUtil.h</ForcedIncludeFiles>
+      <ShowIncludes>false</ShowIncludes>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>$(SolutionDir)Libs\$(Configuration)\$(PlatformTarget)\$(TargetName).pdb</ProgramDatabaseFile>
+      <ProfileGuidedDatabase>$(SolutionDir)Libs\$(Configuration)\$(PlatformTarget)\$(TargetName).pgd</ProfileGuidedDatabase>
+      <ImportLibrary>$(SolutionDir)Libs\$(Configuration)\$(PlatformTarget)\$(TargetName).lib</ImportLibrary>
+      <AdditionalLibraryDirectories>$(SolutionDir)Libs\$(Configuration)\$(PlatformTarget)\;$(TINYXML2_DIR)Dist\x86\Debug\;</AdditionalLibraryDirectories>
+      <AdditionalDependencies>tinyxml2d.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <BuildLog>
+      <Path>$(SolutionDir)Intermediate\$(ProjectName)\$(Configuration)\$(PlatformTarget)\$(MSBuildProjectName).log</Path>
+    </BuildLog>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>AE_UTILITY_EXPORTS;_DEBUG;_WINDOWS;_USRDLL;UTILITIES_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(ProjectDir)Includes\</AdditionalIncludeDirectories>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <ForcedIncludeFiles>$(ProjectDir)Includes\aePrerequisitesUtil.h</ForcedIncludeFiles>
+      <ShowIncludes>false</ShowIncludes>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>$(SolutionDir)Libs\$(Configuration)\$(PlatformTarget)\$(TargetName).pdb</ProgramDatabaseFile>
+      <ProfileGuidedDatabase>$(SolutionDir)Libs\$(Configuration)\$(PlatformTarget)\$(TargetName).pgd</ProfileGuidedDatabase>
+      <ImportLibrary>$(SolutionDir)Libs\$(Configuration)\$(PlatformTarget)\$(TargetName).lib</ImportLibrary>
+      <AdditionalLibraryDirectories>$(SolutionDir)Libs\$(Configuration)\$(PlatformTarget)\;$(TINYXML2_DIR)Dist\x64\Debug\;</AdditionalLibraryDirectories>
+      <AdditionalDependencies>tinyxml2d.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <BuildLog>
+      <Path>$(SolutionDir)Intermediate\$(ProjectName)\$(Configuration)\$(PlatformTarget)\$(MSBuildProjectName).log</Path>
+    </BuildLog>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>AE_UTILITY_EXPORTS;WIN32;NDEBUG;_WINDOWS;_USRDLL;UTILITIES_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(ProjectDir)Includes\</AdditionalIncludeDirectories>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <ForcedIncludeFiles>$(ProjectDir)Includes\aePrerequisitesUtil.h</ForcedIncludeFiles>
+      <ShowIncludes>false</ShowIncludes>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>$(SolutionDir)Libs\$(Configuration)\$(PlatformTarget)\$(TargetName).pdb</ProgramDatabaseFile>
+      <ProfileGuidedDatabase>$(SolutionDir)Libs\$(Configuration)\$(PlatformTarget)\$(TargetName).pgd</ProfileGuidedDatabase>
+      <ImportLibrary>$(SolutionDir)Libs\$(Configuration)\$(PlatformTarget)\$(TargetName).lib</ImportLibrary>
+      <AdditionalLibraryDirectories>$(SolutionDir)Libs\$(Configuration)\$(PlatformTarget)\;$(TINYXML2_DIR)Dist\x86\Release\;</AdditionalLibraryDirectories>
+      <AdditionalDependencies>tinyxml2.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <BuildLog>
+      <Path>$(SolutionDir)Intermediate\$(ProjectName)\$(Configuration)\$(PlatformTarget)\$(MSBuildProjectName).log</Path>
+    </BuildLog>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>AE_UTILITY_EXPORTS;NDEBUG;_WINDOWS;_USRDLL;UTILITIES_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(ProjectDir)Includes\</AdditionalIncludeDirectories>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <ForcedIncludeFiles>$(ProjectDir)Includes\aePrerequisitesUtil.h</ForcedIncludeFiles>
+      <ShowIncludes>false</ShowIncludes>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>$(SolutionDir)Libs\$(Configuration)\$(PlatformTarget)\$(TargetName).pdb</ProgramDatabaseFile>
+      <ProfileGuidedDatabase>$(SolutionDir)Libs\$(Configuration)\$(PlatformTarget)\$(TargetName).pgd</ProfileGuidedDatabase>
+      <ImportLibrary>$(SolutionDir)Libs\$(Configuration)\$(PlatformTarget)\$(TargetName).lib</ImportLibrary>
+      <AdditionalLibraryDirectories>$(SolutionDir)Libs\$(Configuration)\$(PlatformTarget)\;$(TINYXML2_DIR)Dist\x64\Release\;</AdditionalLibraryDirectories>
+      <AdditionalDependencies>tinyxml2.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <BuildLog>
+      <Path>$(SolutionDir)Intermediate\$(ProjectName)\$(Configuration)\$(PlatformTarget)\$(MSBuildProjectName).log</Path>
+    </BuildLog>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="Includes\aeAABB.h" />
+    <ClInclude Include="Includes\aeColor.h" />
+    <ClInclude Include="Includes\aeCriticalSection.h" />
+    <ClInclude Include="Includes\aeException.h" />
+    <ClInclude Include="Includes\aeFileSystem.h" />
+    <ClInclude Include="Includes\aeGlobalFrameAlloc.h" />
+    <ClInclude Include="Includes\aeLogger.h" />
+    <ClInclude Include="Includes\aeMath.h" />
+    <ClInclude Include="Includes\aeMemoryAllocator.h" />
+    <ClInclude Include="Includes\aeModule.h" />
+    <ClInclude Include="Includes\aePlane.h" />
+    <ClInclude Include="Includes\aePlatformDefines.h" />
+    <ClInclude Include="Includes\aePlatformMath.h" />
+    <ClInclude Include="Includes\aePlatformTypes.h" />
+    <ClInclude Include="Includes\aePrerequisitesUtil.h" />
+    <ClInclude Include="Includes\aeQuaternion.h" />
+    <ClInclude Include="Includes\aeRandomNumberGenerator.h" />
+    <ClInclude Include="Includes\aeRay.h" />
+    <ClInclude Include="Includes\aeSphere.h" />
+    <ClInclude Include="Includes\aeStdHeaders.h" />
+    <ClInclude Include="Includes\aeString.h" />
+    <ClInclude Include="Includes\aeTime.h" />
+    <ClInclude Include="Includes\aeVector2Int.h" />
+    <ClInclude Include="Includes\aeWin32Math.h" />
+    <ClInclude Include="Includes\aeMatrix3.h" />
+    <ClInclude Include="Includes\aeMatrix4.h" />
+    <ClInclude Include="Includes\aePerlin.h" />
+    <ClInclude Include="Includes\aeVector2.h" />
+    <ClInclude Include="Includes\aeVector3.h" />
+    <ClInclude Include="Includes\aeVector4.h" />
+    <ClInclude Include="Includes\aeXMLSystem.h" />
+    <ClInclude Include="Includes\aeZiggurat.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Src\aeAABB.cpp" />
+    <ClCompile Include="Src\aeColor.cpp" />
+    <ClCompile Include="Src\aeCriticalSection.cpp" />
+    <ClCompile Include="Src\aeFileSystem.cpp" />
+    <ClCompile Include="Src\aeGlobalFrameAlloc.cpp" />
+    <ClCompile Include="Src\aeLogger.cpp" />
+    <ClCompile Include="Src\aeMath.cpp" />
+    <ClCompile Include="Src\aeMemoryAllocator.cpp" />
+    <ClCompile Include="Src\aePlane.cpp" />
+    <ClCompile Include="Src\aePlatformMath.cpp" />
+    <ClCompile Include="Src\aePlatformTime.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="Src\aeQuaternion.cpp" />
+    <ClCompile Include="Src\aeRandomNumberGenerator.cpp" />
+    <ClCompile Include="Src\aeRay.cpp" />
+    <ClCompile Include="Src\aeSphere.cpp" />
+    <ClCompile Include="Src\aeString.cpp" />
+    <ClCompile Include="Src\aeVector2Int.cpp" />
+    <ClCompile Include="Src\aeWin32Math.cpp" />
+    <ClCompile Include="Src\aeMatrix3.cpp" />
+    <ClCompile Include="Src\aeMatrix4.cpp" />
+    <ClCompile Include="Src\aePerlin.cpp" />
+    <ClCompile Include="Src\aeVector2.cpp" />
+    <ClCompile Include="Src\aeVector3.cpp" />
+    <ClCompile Include="Src\aeVector4.cpp" />
+    <ClCompile Include="Src\aeWin32Time.cpp" />
+    <ClCompile Include="Src\aeZiggurat.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
